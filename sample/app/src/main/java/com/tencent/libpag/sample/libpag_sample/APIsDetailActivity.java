@@ -168,7 +168,7 @@ public class APIsDetailActivity extends AppCompatActivity {
     void testEditText(PAGFile pagFile, PAGView pagView) {
         if (pagFile == null || pagView == null || pagFile.numTexts() <= 0) return;
         PAGText textData = pagFile.getTextData(0);
-        textData.text = "replacement test";
+        textData.text = "替换文字";
         pagFile.replaceText(0, textData);
     }
 
